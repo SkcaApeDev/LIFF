@@ -56,7 +56,7 @@
     function closed() {
     }
 
-    async function scanCode() {
+    async function scanCodeV2() {
       let result = await liff.scanCodeV2()
       document.getElementById("scanCode").append(result.value)
     }
