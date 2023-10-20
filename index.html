@@ -80,7 +80,14 @@
       document.getElementById("version").append(liff.getVersion())
       document.getElementById("accessToken").append(liff.getAccessToken())
       document.getElementById("isInClient").append(liff.isInClient())
-      document.getElementById("userId").append(liff.getUserId())
+      if (liff.isInClient){
+        document.getElementById("btcLogOut").style.display = "none"
+      }
+      else{
+        document.getElementById("btcMsg").style.display = "none"
+        document.getElementById("btnScanCode").style.display = "none"
+        document.getElementById("btnClose").style.display = "none"
+      }
       
     }
 
