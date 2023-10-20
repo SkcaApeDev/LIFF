@@ -63,6 +63,8 @@
     }
 
     async function getFriendship() {
+      let friend = await liff.getFriendship()
+      document.getElementById("friendship").append(friend.friendFlag)
     }
 
     async function sendMsg() {
